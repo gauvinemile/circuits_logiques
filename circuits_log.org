@@ -7439,24 +7439,63 @@ gratuits.
 
     16. \((364,3)_{8} = ( )_{10}\)
 
-    17. \((25)_{10} = ( )_{8}\)
+    17. \((111101011)_{2} = ( )_{10}\)
 
-    18. \((111101011)_{2} = ( )_{10}\)
+    18. \((31,22)_{10} = ( )_{2}\)
 
-    19. \((31,22)_{10} = ( )_{2}\)
+    19. \((43,39)_{16} = ( )_{2}\)
 
-    20. \((43,39)_{16} = ( )_{2}\)
+    20. \((43,37)_{8} = ( )_{8}\)
 
-    21. \((43,37)_{8} = ( )_{8}\)
+    21. \((36)_{8} = ( )_{10}\)
 
-    22. \((36)_{8} = ( )_{10}\)
-
-    23. \((25)_{10} = ( )_{8}\)
-
-    24. \((101101111)_{2} = ( )_{10}\)
+    22. \((101101111)_{2} = ( )_{10}\)
 
 **** Réponse                                                              :r:
 
+    1. \((32)_{10} = (1010 )_{2}\)
+
+    2. \((F8,A7)_{16} = (11111000,10100111)_{2}\)
+
+    3. \((65)_{8} = (41)_{16}\)
+
+    4. \((240,51)_{8} = (160,640625)_{10}\)
+
+    5. \((25)_{10} = (31)_{8}\)
+
+    6. \((100101011)_{2} = (149)_{10}\)
+
+    7. \((28)_{10} = (11100)_{2}\)
+
+    8. \((E3)_{16} = (11100011)_{2}\)
+
+    9. \((B3)_{16} = (263)_{8}\)
+
+    10. \((11001011101)_{2} = (65D)_{16}\)
+
+    11. \((754)_{8} = (492)_{10}\)
+
+    12. \((106)_{8} = (46)_{16}\)
+
+    13. \((27,52)_{10} = (11011,10000101000111101011...)_{2}\)
+
+    14. \((4F,3D9)_{16} = (1001111,001111011001)_{2}\)
+
+    15. \((73,313)_{8} = (3B,658)_{16}\)
+
+    16. \((364,3)_{8} = (244,375)_{10}\)
+
+    17. \((111101011)_{2} = (491)_{10}\)
+
+    18. \((31,22)_{10} = (11111,0011100001010001111010111000010100011110101110000101000111101...)_{2}\)
+
+    19. \((43,39)_{16} = (1000011,00111001)_{2}\)
+
+    20. \((43,37)_{8} = (43,37)_{8}\)
+
+    21. \((36)_{8} = (30)_{10}\)
+
+    22. \((101101111)_{2} = (367)_{10}\)
 *** Question
  Donnez le nombre minimum de bits nécessaires pour définir un code
     pour représenter:
@@ -7470,7 +7509,18 @@ gratuits.
     4. alphanumérique pour les lettres A \dots Z, a \dots z et les
        chiffres 0 \dots 9
 
-**** Réponse                                                              :r:
+**** Réponse                                                              :r:                                                              :r:
+    
+    1.
+       4 bits. 
+    2.
+       6 bits.
+    3.
+       6 bits.
+    4.
+       6 bits.
+
+
 
 *** Question
  Calculez les compléments suivants (pour un nombre de bits \(n\)):
@@ -7553,6 +7603,14 @@ gratuits.
     4. la soustraction de nombres de 4 bits
  
 **** Réponse                                                              :r:
+    
+    1.[[file:Solutions_svg/solCa24bits.svg]]
+
+    2.[[file:Solutions_svg/solCa28bits.svg]]
+
+    3.[[file:Solutions_svg/solAdd8bits.svg]]
+
+    4.[[file:Solutions_svg/solSous4bitsOutCa2.svg]]
 
 *** Question
  Un réseau informatique comporte 60 ordinateurs. On doit assigner à
@@ -7563,6 +7621,10 @@ gratuits.
     2. Combien de mots-code ne seront pas utilisés?
 
 **** Réponse                                                              :r:
+
+  1. 6 bits
+
+  2. 4 mots-codes
 
 *** Question
  Selon les critères d'achat du service des achats d'une entreprise, un
@@ -7620,6 +7682,16 @@ gratuits.
 
 **** Réponse                                                              :r:
 
+    1. 3 bits
+
+    2. 5 bits
+
+    3. 
+
+    4. 
+
+    5.
+
 ** Série 2
 :PROPERTIES:
   :UNNUMBERED: notoc
@@ -7655,6 +7727,13 @@ gratuits.
 
 **** Réponse                                                              :r:
 
+    1.
+        - \(F(A,B,C) = \sum (0,1,3,6) \)
+        - \(F(A,B,C) = \prod (2,4,5,7) \)
+    2.  \(F(A,B,C) = A^{\prime} B^{\prime} + B (A^{\prime} C + A C^{\prime})\)
+
+    3.  [[file:Solutions_svg/solReducBoole.svg]]
+
 *** Question
  Trouvez le complément de la fonction logique donnée par l'expression
     suivante en utilisant trois méthodes différentes.
@@ -7678,6 +7757,12 @@ gratuits.
        NOR.
 
 **** Réponse                                                              :r:
+
+    1. [[file:Solutions_svg/solNandNor1.svg]]
+
+    2. [[file:Solutions_svg/solNandNor2.svg]]
+
+    3. [[file:Solutions_svg/solNandNor3.svg]]
 
 *** Question
   On doit concevoir un circuit logique qui détermine le complément à deux
