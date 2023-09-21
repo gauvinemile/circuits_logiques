@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Created with Digital by H.Neemann -->
-<!-- created: Mon Jul 03 17:47:12 EDT 2023 -->
+<!-- created: Wed Jul 19 11:11:21 EDT 2023 -->
 
 <svg
    xmlns:svg="http://www.w3.org/2000/svg"
@@ -31,13 +31,13 @@
 <g>
 <path d="M 449,425 L 479,425 L 479,455 L 449,455 Z" stroke="#000000" stroke-width="4.0" fill="none"/>
 <circle cx="464.0" cy="440.0" r="9.0" stroke="#000000" stroke-width="4.0" fill="none" />
-<text text-anchor="end" x="435.0" y="449.0" fill="#000000" style="font-size:24px"><tspan style="font-style:italic;">A</tspan></text>
+<text text-anchor="end" x="435.0" y="449.0" fill="#000000" style="font-size:24px"><tspan style="font-style:italic;">B</tspan></text>
 <circle cx="480.0" cy="440.0" r="2.0" stroke="#b20000" stroke-width="4.0" fill="#b20000" />
 </g>
 <g>
 <path d="M 449,485 L 479,485 L 479,515 L 449,515 Z" stroke="#000000" stroke-width="4.0" fill="none"/>
 <circle cx="464.0" cy="500.0" r="9.0" stroke="#000000" stroke-width="4.0" fill="none" />
-<text text-anchor="end" x="435.0" y="509.0" fill="#000000" style="font-size:24px"><tspan style="font-style:italic;">B</tspan></text>
+<text text-anchor="end" x="435.0" y="509.0" fill="#000000" style="font-size:24px"><tspan style="font-style:italic;">A</tspan></text>
 <circle cx="480.0" cy="500.0" r="2.0" stroke="#b20000" stroke-width="4.0" fill="#b20000" />
 </g>
 <g>
