@@ -1,4 +1,6 @@
 
+
+
 #+OPTIONS: toc:nil
 #+OPTIONS: f
 #+OPTIONS: num: 4
@@ -7452,8 +7454,7 @@ gratuits.
 
     22. \((101101111)_{2} = ( )_{10}\)
 
-****                                                               :r:
-
+**** Réponse                                                              :r:
     1. \((32)_{10} = (1010 )_{2}\)
 
     2. \((F8,A7)_{16} = (11111000,10100111)_{2}\)
@@ -7472,7 +7473,6 @@ gratuits.
 
     9. \((B3)_{16} = (263)_{8}\)
 
-       
     10. \((11001011101)_{2} = (65D)_{16}\)
 
     11. \((754)_{8} = (492)_{10}\)
@@ -7482,7 +7482,6 @@ gratuits.
     13. \((27,52)_{10} = (11011,10000101000111101011...)_{2}\)
 
     14. \((4F,3D9)_{16} = (1001111,001111011001)_{2}\)
-
 
     15. \((73,313)_{8} = (3B,658)_{16}\)
 
@@ -7499,6 +7498,7 @@ gratuits.
     21. \((36)_{8} = (30)_{10}\)
 
     22. \((101101111)_{2} = (367)_{10}\)
+
 *** Question
  Donnez le nombre minimum de bits nécessaires pour définir un code
     pour représenter:
@@ -7513,7 +7513,6 @@ gratuits.
        chiffres 0 \dots 9
 
 **** Réponse                                                              :r:                                                              :r:
-    
     1.
        4 bits. 
     2.
@@ -7522,8 +7521,6 @@ gratuits.
        6 bits.
     4.
        6 bits.
-
-
 
 *** Question
  Calculez les compléments suivants (pour un nombre de bits \(n\)):
@@ -7549,6 +7546,25 @@ gratuits.
     10. compl. à 5 de \((42102)_5\)
 
 **** Réponse                                                              :r:
+    1. \((1001 0101)_2\)
+
+    2. \((1100 1011)_2\)
+
+    3. \((1101 0010)_2\)
+
+    4. \((2145)_{10}\)
+
+    5. \((75898)_{10}\)
+
+    6. \((0100 1111)_2\)
+
+    7. \((111 0011)_2\)
+
+    8. \((101 0010)_2\)
+
+    9. \((174)_{10}\)
+
+    10. \((348)_{10}\)
 
 *** Question
  Effectuez les calculs suivants selon la méthode indiquée:
@@ -7584,6 +7600,35 @@ gratuits.
     15. \((11011100)_{2} - (55)_{10}\), compl. à 2, conversion. Réponse: \(( )_{2}\)
 
 **** Réponse                                                              :r:
+    1. \((2D1E)_{16}\)
+
+    2. \((1134)_8 = (604)_{10}\)
+
+    3. \((1111 1010)_2 = (FA)_{16}\)
+
+    4. \((1010 0110)_{2}\)
+
+    5. \((B0)_{16}\)
+
+    6. \((C6)_{16}\)
+
+    7. \((EB)_{16}\)
+
+    8. \((E0)_{16}\)
+
+    9. \((176)_{8} = (126)_{10}\)
+
+    10. \((1111 1100)_{2} = (FC)_{16}\)
+
+    11. \((1010 0011)_{2}\)
+
+    12. \((C0)_{16}\)
+
+    13. \((220)_{8} = (144)_{10}\)
+
+    14. \((0000 0111)_{2} = (07)_{16}\)
+
+    15. \((1010 0101)_{2}\)
 
 *** Question
  Vous disposez de blocs permettant de calculer les fonctions
@@ -7606,14 +7651,17 @@ gratuits.
     4. la soustraction de nombres de 4 bits
  
 **** Réponse                                                              :r:
-    
-    1.[[file:Solutions_svg/solCa24bits.svg]]
+    1.
+      [[file:Solutions_svg/solCa24bits.svg]]
 
-    2.[[file:Solutions_svg/solCa28bits.svg]]
+    2.
+      [[file:Solutions_svg/solCa28bits.svg]]
 
-    3.[[file:Solutions_svg/solAdd8bits.svg]]
+    3.
+      [[file:Solutions_svg/solAdd8bits.svg]]
 
-    4.[[file:Solutions_svg/solSous4bitsOutCa2.svg]]
+    4.
+      [[file:Solutions_svg/solSous4bitsOutCa2.svg]]
 
 *** Question
  Un réseau informatique comporte 60 ordinateurs. On doit assigner à
@@ -7624,10 +7672,9 @@ gratuits.
     2. Combien de mots-code ne seront pas utilisés?
 
 **** Réponse                                                              :r:
+    1. 6 bits
 
-  1. 6 bits
-
-  2. 4 mots-codes
+    2. 4 mots-codes
 
 *** Question
  Selon les critères d'achat du service des achats d'une entreprise, un
@@ -7666,9 +7713,33 @@ gratuits.
 
       $$F_2 = A^{\prime} B^{\prime} C^{\prime} + A^{\prime} B^{\prime} C + A^{\prime} B C^{\prime} + A B^{\prime} C^{\prime}$$
 
-      $$F_2 = B^{\prime} C^{\prime} + A^{\prime} B^{\prime} + A^{\prime} C$$
+      $$F_3 = B^{\prime} C^{\prime} + A^{\prime} B^{\prime} + A^{\prime} C$$
 
 **** Réponse                                                              :r:
+    Critères:
+      - \((A^{\prime}+B)C\)
+      - \(A^{\prime}C^{\prime}\)
+      - \(AB^{\prime}C\)
+
+    \(S = ((A^{\prime}+B)C) + (A^{\prime}C^{\prime}) + (AB^{\prime}C)\)
+
+    Table de vérité:
+    | \(A\) | \(B\) | \(C\) |   | \((A^{\prime}+B)C\) | \(A^{\prime}C^{\prime}\) | \(AB^{\prime}C\) | \(S\) | \(F_1\) | \(F_2\) | \(F_3\) |
+    |-------+-------+-------+---+---------------------+--------------------------+------------------+-------+---------+---------+---------|
+    |     0 |     0 |     0 |   |         0           |            1             |        0         |   1   |   1     |    1    |    1    |
+    |     0 |     0 |     1 |   |         1           |            0             |        0         |   1   |   1     |    1    |    1    |
+    |     0 |     1 |     0 |   |         0           |            1             |        0         |   1   |   0     |    1    |    0    |
+    |     0 |     1 |     1 |   |         1           |            0             |        0         |   1   |   0     |    0    |    1    |
+    |     1 |     0 |     0 |   |         0           |            0             |        0         |   0   |   1     |    1    |    1    |
+    |     1 |     0 |     1 |   |         0           |            0             |        1         |   1   |   0     |    0    |    0    |
+    |     1 |     1 |     0 |   |         0           |            0             |        0         |   0   |   0     |    0    |    0    |
+    |     1 |     1 |     1 |   |         1           |            0             |        0         |   1   |   0     |    0    |    0    |
+
+    \(S = A^{\prime} + AC \)
+
+    En conslutant la table de vérité ci-haut que la fonction logique des critères d'achats est différente de \(F_1\), \(F_2\) et de \(F_3\).
+
+
 
 *** Question
  Donnez le nombre minimum de bits nécessaires pour définir un code pour représenter
@@ -7684,16 +7755,16 @@ gratuits.
     5. une date de naissance (jour, mois, année)
 
 **** Réponse                                                              :r:
+    1.  3 bits
 
-    1. 3 bits
+    2.  5 bits
 
-    2. 5 bits
+    3.  10 bits
 
-    3. 9 bits
+    4.  4 bits pour le mois et 5 bits pour la date, alors 9 bits au total.
 
-    4. 
+    5.  En supposant une année comprise entre 0 et 2048. 12 bits pour l'année et 9 pour jour/mois, donc un total de 21.
 
-    5.
 
 ** Série 2
 :PROPERTIES:
@@ -7729,10 +7800,10 @@ gratuits.
        simplifiée trouvée.
 
 **** Réponse                                                              :r:
-
     1.
         - \(F(A,B,C) = \sum (0,1,3,6) \)
         - \(F(A,B,C) = \prod (2,4,5,7) \)
+
     2.  \(F(A,B,C) = A^{\prime} B^{\prime} + B (A^{\prime} C + A C^{\prime})\)
 
     3.  [[file:Solutions_svg/solReducBoole.svg]]
@@ -7746,6 +7817,32 @@ gratuits.
     $$
 
 **** Réponse                                                              :r:
+    | \(A\) | \(B\) | \(C\) | \(D\) |   | \( b (a^{\prime} c^{\prime} + a d + a c) \) | \((b + c^{\prime}+d)^{\prime}\) | \(a^{\prime} b c^{\prime} d \) | \(a b c d\) | \( s \) | \( s^{\prime} \) |
+    |-------+-------+-------+-------+---+---------------------------------------------+---------------------------------+--------------------------------+-------------+---------+------------------|
+    |   0   |   0   |   0   |   0   |   |                      0                      |               0                 |                0               |     0       |    0    |        1         |
+    |   0   |   0   |   0   |   1   |   |                      0                      |               0                 |                0               |     0       |    0    |        1         |
+    |   0   |   0   |   1   |   0   |   |                      0                      |               1                 |                0               |     0       |    1    |        0         |
+    |   0   |   0   |   1   |   1   |   |                      0                      |               0                 |                0               |     0       |    0    |        1         |
+    |   0   |   1   |   0   |   0   |   |                      1                      |               0                 |                0               |     0       |    1    |        0         |
+    |   0   |   1   |   0   |   1   |   |                      1                      |               0                 |                1               |     0       |    1    |        0         |
+    |   0   |   1   |   1   |   0   |   |                      0                      |               0                 |                0               |     0       |    0    |        1         |
+    |   0   |   1   |   1   |   1   |   |                      0                      |               0                 |                0               |     0       |    0    |        1         |
+    |   1   |   0   |   0   |   0   |   |                      0                      |               0                 |                0               |     0       |    0    |        1         |
+    |   1   |   0   |   0   |   1   |   |                      0                      |               0                 |                0               |     0       |    0    |        1         |
+    |   1   |   0   |   1   |   0   |   |                      0                      |               1                 |                0               |     0       |    1    |        0         |
+    |   1   |   0   |   1   |   1   |   |                      0                      |               0                 |                0               |     0       |    0    |        1         |
+    |   1   |   1   |   0   |   0   |   |                      0                      |               0                 |                0               |     0       |    0    |        1         |
+    |   1   |   1   |   0   |   1   |   |                      0                      |               0                 |                0               |     0       |    0    |        1         |
+    |   1   |   1   |   1   |   0   |   |                      1                      |               0                 |                0               |     0       |    1    |        0         |
+    |   1   |   1   |   1   |   1   |   |                      1                      |               0                 |                0               |     1       |    1    |        0         |
+
+    $$
+      s = m2 + m4 + m5 + m10 + mE + mF
+    $$
+
+    $$
+      s^{\prime} = m0 + m1 + m3 + m6 + m7 + m8 + m9 + mB + mC + mD
+    $$
 
 *** Question
   Considérez la fonction logique définie par l'expression $F =
@@ -7760,6 +7857,11 @@ gratuits.
        NOR.
 
 **** Réponse                                                              :r:
+    1. [[file:Solutions_svg/solNandNor1.svg]]
+
+    2. [[file:Solutions_svg/solNandNor2.svg]]
+
+    3. [[file:Solutions_svg/solNandNor3.svg]]
 
 *** Question
   On doit concevoir un circuit logique qui détermine le complément à deux
@@ -7770,6 +7872,24 @@ gratuits.
       a_0)$, donnez les tableaux de vérité pour $s_3, s_2, s_1$, et $s_0$.
 
 **** Réponse                                                              :r:
+    | \(a_3\) | \(a_2\) | \(a_1\) | \(a_0\) |   | \(s_3\) | \(s_2\) | \(s_1\) | \(s_0\) |
+    |---------+---------+---------+---------+---+---------+---------+---------+---------|
+    |    0    |    0    |    0    |    0    |   |    0    |    0    |    0    |    0    | 
+    |    0    |    0    |    0    |    1    |   |    1    |    1    |    1    |    1    |
+    |    0    |    0    |    1    |    0    |   |    1    |    1    |    1    |    0    |
+    |    0    |    0    |    1    |    1    |   |    1    |    1    |    0    |    1    |
+    |    0    |    1    |    0    |    0    |   |    1    |    1    |    0    |    0    |
+    |    0    |    1    |    0    |    1    |   |    1    |    0    |    1    |    1    |
+    |    0    |    1    |    1    |    0    |   |    1    |    0    |    1    |    0    |
+    |    0    |    1    |    1    |    1    |   |    1    |    0    |    0    |    1    |
+    |    1    |    0    |    0    |    0    |   |    1    |    0    |    0    |    0    |
+    |    1    |    0    |    0    |    1    |   |    0    |    1    |    1    |    1    |
+    |    1    |    0    |    1    |    0    |   |    0    |    1    |    1    |    0    |
+    |    1    |    0    |    1    |    1    |   |    0    |    1    |    0    |    1    |
+    |    1    |    1    |    0    |    0    |   |    0    |    1    |    0    |    0    |
+    |    1    |    1    |    0    |    1    |   |    0    |    0    |    1    |    1    |
+    |    1    |    1    |    1    |    0    |   |    0    |    0    |    1    |    0    |
+    |    1    |    1    |    1    |    1    |   |    0    |    0    |    0    |    1    |
 
 *** Question
   Complétez la figure ci-dessous (en ajoutant des connexions) afin de
@@ -7777,9 +7897,10 @@ gratuits.
     $$
     S= a^\prime + b^\prime + c d
     $$
-    [[file:Modeles_exercices/exbloc2a.svg]]
+    [[file:Images_svg/exbloc2a.svg]]
 
 **** Réponse                                                              :r:
+  [[file:Solutions_svg/solExBloc2a.svg]]
 
 *** Question
   Complétez la figure ci-dessous (en ajoutant des connexions) afin de
@@ -7789,15 +7910,17 @@ gratuits.
      L'entrée \((a_3,a_2,a_1, a_0)\) représente un nombre entier
     décimal codé en BCD. Les entrées \( \geq 9\) peuvent donner
     n'importe quelle sortie.
- [[file:Modeles_exercices/exbloc2b.svg]]
+ [[file:Images_svg/exbloc2b.svg]]
 
 **** Réponse                                                              :r:
+  [[file:Solutions_svg/solExBloc2b.svg]]
 
 *** Question
   Dessinez le circuit logique de la fonction \(S = a b + c^\prime +
     d^\prime \) en utilisant au plus quatre portes NAND.
 
 **** Réponse                                                              :r:
+  [[file:Solutions_svg/solMax4Nand.svg]]
 
 *** Question
   Simplifiez la fonction logique donnée par l'expression suivante:
@@ -7812,6 +7935,15 @@ gratuits.
     aussi simplifiées.
 
 **** Réponse                                                              :r:
+    
+    [[file:Solutions_svg/kmap3fonctsimp1.svg]]
+    $$
+      s = a^{\prime} b c^{\prime} + bc^{\prime}d + abc + b^{\prime}cd^{\prime}
+    $$
+    [[file:Solutions_svg/kmap3fonctsimp2.svg]]
+    $$
+      s=  a^{\prime}bc^{\prime} + abd + acd^{\prime} + b^{\prime}cd^{\prime}
+    $$
 
 *** Question
   Considérez la fonction logique définie par l'expression 
@@ -7831,6 +7963,14 @@ gratuits.
        portes (incluant les inversions).
 
 **** Réponse                                                              :r:
+    1.
+      [[file:Solutions_svg/solReductionNandNor1.svg]]
+    2.
+      [[file:Solutions_svg/solReductionNandNor2.svg]]
+    3.
+      [[file:Solutions_svg/solReductionNandNor3.svg]]
+    4.
+      [[file:Solutions_svg/solReductionNandNor4.svg]]
 
 *** Question
   Simplifiez la fonction logique donnée par l'expression suivante:
@@ -7840,38 +7980,68 @@ gratuits.
     $$
      au moyen d'un diagramme de Karnaugh. Donnez deux solutions aussi simplifiées.
 
+**** Réponse                                                              :r:
+
+    [[file:Solutions_svg/kmapS2fonctImp1.svg]]
+    
+    $$
+      s = c^{\prime}(a^{\prime}+bd^{\prime}) + abcd \\
+      s = b ( acd + c^{\prime}d^{\prime}) + a^{\prime} c^{\prime}
+    $$
+
+
 *** Question
   Considérez la fonction logique définie par l'expression \(F = (AB + C)
       A^{\prime} + C + A^{\prime}\).
-
     1. Dessinez le circuit logique correspondant.
 
     2. Dessinez un circuit équivalent qui n'utilise que des portes
-       NAND.
 
     3. Dessinez un circuit équivalent qui n'utilise que des portes
        NOR.
 
     4. Dessinez un circuit équivalent qui ne comporte que deux niveaux de
        portes (excluant les inversions).
-
+       
 **** Réponse                                                              :r:
+    1. 
+      [[file:Solutions_svg/solReductionNandNor1_2.svg]]
+
+    2. 
+      [[file:Solutions_svg/solReductionNandNor2_2.svg]]
+
+    3. 
+      [[file:Solutions_svg/solReductionNandNor3_2.svg]]
+
+    4. 
+      [[file:Solutions_svg/solReductionNandNor4_2.svg]]
 
 *** Question
   Donnez le tableau  de vérité des deux fonctions qui, à partir d'une
     entrée binaire non-signée sur trois bits, donnent en sortie la
     représentation binaire non-signée sur deux bits du plus grand diviseur
-    \(< 3\) de l'entrée, s'il y a lieu. Simplifiez les deux fonctions en
+    \( \leq 3\) de l'entrée, s'il y a lieu. Simplifiez les deux fonctions en
     tenant compte des cas facultatifs.
 
 **** Réponse                                                              :r:
+    | \(a_2\) | \(a_1\) | \(a_0\) |   | \(s_1\) | \(s_0\) |
+    |---------+---------+---------+---+---------+---------|
+    |    0    |    0    |    0    |   |    x    |    x    |
+    |    0    |    0    |    1    |   |    0    |    1    |
+    |    0    |    1    |    0    |   |    1    |    0    |
+    |    0    |    1    |    1    |   |    1    |    1    |
+    |    1    |    0    |    0    |   |    1    |    0    |
+    |    1    |    0    |    1    |   |    0    |    1    |
+    |    1    |    1    |    0    |   |    1    |    1    |
+    |    1    |    1    |    1    |   |    0    |    1    |
 
 *** Question
   Complétez la figure ci-dessous (en ajoutant des connexions) afin de
     réaliser une  fonction NAND à trois entrées \(S = (a b c)^\prime\).
-    [[file:Modeles_exercices/exbloc2c.svg]]
+    [[file:Images_svg/exbloc2c.svg]]
 
 **** Réponse                                                              :r:
+    [[file:Solutions_svg/solExBloc2c.svg]]
 
 *** Question
  Dans une application numérique, on doit concevoir un circuit logique
@@ -7894,6 +8064,30 @@ gratuits.
        sur le nombre d'entrées).
 
 **** Réponse                                                              :r:
+    1.  | \(a_3\) | \(a_2\) | \(a_1\) | \(a_0\) |   | \(s\) |
+        |---------+---------+---------+---------+---+-------|
+        |    0    |    0    |    0    |    0    |   | \(x\) |
+        |    0    |    0    |    0    |    1    |   | \(x\) |
+        |    0    |    0    |    1    |    0    |   |   1   |
+        |    0    |    0    |    1    |    1    |   |   0   |
+        |    0    |    1    |    0    |    0    |   |   1   |
+        |    0    |    1    |    0    |    1    |   |   0   |
+        |    0    |    1    |    1    |    0    |   |   1   |
+        |    0    |    1    |    1    |    1    |   |   0   |
+        |    1    |    0    |    0    |    0    |   |   1   |
+        |    1    |    0    |    0    |    1    |   |   1   |
+        |    1    |    0    |    1    |    0    |   |   1   |
+        |    1    |    0    |    1    |    1    |   |   0   |
+        |    1    |    1    |    0    |    0    |   |   1   |
+        |    1    |    1    |    0    |    1    |   |   0   |
+        |    1    |    1    |    1    |    0    |   |   1   |
+        |    1    |    1    |    1    |    1    |   |   1   |
+
+    2.
+      [[file:Solutions_svg/kmapNombresPremiers.svg]]
+    3.
+      [[file:Solutions_svg/solNombresPremiers.svg]]
+
 
 ** Série 3
 :PROPERTIES:
@@ -7910,6 +8104,11 @@ gratuits.
 
 **** Réponse                                                              :r:
 
+    [[file:Solutions_svg/kmapSerie2_1.svg]]
+    $$
+      S =  (A^{\prime} +B^{\prime} )(A+B+D)
+    $$
+    
 *** Question
   À l'aide d'un diagramme de Karnaugh, simplifiez 
     $$
@@ -7919,10 +8118,18 @@ gratuits.
     $$
     en tenant compte des cas facultatifs suivants: \(\sum(3,8,11,14)\).
     1. Donnez une solution qui n'utilise pas l'entrée \(D\).
-    2. Donnez une solution qui n'utilise pas l'entrée \(B\).
+    # 2. Donnez une solution qui n'utilise pas l'entrée \(B\).
 
 **** Réponse                                                              :r:
-   
+    1. [[file:Solutions_svg/kmapSerie3ex2_1.svg]]
+        $$
+          S = AB^{\prime}+AC+A^{\prime}C^{\prime}
+        $$
+
+
+    # 2.  À compléter!!
+
+
 *** Question
   À l'aide de la méthode Quine-McCluskey, simplifiez l'expression
     logique suivante: 
@@ -7936,17 +8143,29 @@ gratuits.
     $$
 
 **** Réponse                                                              :r:
+    |        | 011110 | 011111 | 101111 | 111110 |   | 011010 | 011101 | 111100 | 111111 |
+    |--------+--------+--------+--------+--------+---+--------+--------+--------+--------|
+    | 011-10 |    X   |        |        |        |   |    X   |        |        |        |
+    | 0111-0 |        |    X   |        |        |   |        |    X   |        |        |
+    | 1111-0 |        |        |        |    X   |   |        |        |    X   |        |
+    | -11111 |        |    X   |        |        |   |        |        |        |    X   |
+    | 1-1111 |        |        |    X   |        |   |        |        |        |    X   |
+    | -1111- |   X    |    X   |        |    X   |   |        |        |        |    X   |
 
-    ** Question
+    i.p.e = -1111-, 1-1111
+    i.p.i = 011-10, 0111-0, 1111-0, -11111
+
+*** Question
   Complétez la figure ci-dessous pour obtenir un multiplicateur dont
     la sortie (5 bits) est le produite de deux entrées (de 3 bits et 2
     bits, respectivement). Comme on peut voir sur la figure, on dispose
     de quatre additionneurs complets à 1 bit et de six portes ET. La
     multiplication sera $$(P_4, P_3, P_2, P_1, P_0)_2 = (y_2, y_1, y_0)_2
     \times (z_1, z_0)_2$$.
-    [[file:Modeles_exercices/exbloc3a.svg]]
+    [[file:Images_svg/exbloc3a.svg]]
 
 **** Réponse                                                              :r:
+    [[file:Solutions_svg/solExBloc3a.svg]]
 
 *** Question
   Considérez la fonction logique \(F\) définie par le tableau de vérité suivant
@@ -7974,11 +8193,22 @@ gratuits.
  ci-dessous.
  |              | \(E_0\) | \(E_1\) | \(E_2\) | \(E_3\) | \(E_4\) | \(E_5\) | \(E_6\) | \(E_7\) |
  |--------------+---------+---------+---------+---------+---------+---------+---------+---------|
+ |     0        |         |         |         |         |         |         |         |         |
  | \(A\)        |         |         |         |         |         |         |         |         |
  | \(A^\prime\) |         |         |         |         |         |         |         |         |
- [[file:Modeles_exercices/exbloc3b.svg]]
+ |     1        |         |         |         |         |         |         |         |         |
+ [[file:Images_svg/exbloc3b.svg]]
 
 **** Réponse                                                              :r:
+
+      |              | \(E_0\) | \(E_1\) | \(E_2\) | \(E_3\) | \(E_4\) | \(E_5\) | \(E_6\) | \(E_7\) |
+      |--------------+---------+---------+---------+---------+---------+---------+---------+---------|
+      |     0        |     X   |         |         |    X    |    X    |         |    X    |         |
+      | \(A\)        |         |         |         |         |         |    X    |         |         |
+      | \(A^\prime\) |         |         |    X    |         |         |         |         |         |
+      |     1        |         |    X    |         |         |         |         |         |    X    |
+
+    [[file:Solutions_svg/solExBloc3b.svg]]
 
 *** Question
   Simplifiez la fonction logique à six entrées
@@ -7987,7 +8217,7 @@ gratuits.
     $$
     représentée par la liste de minterms suivants
 
-    010000, 101000, 110100, 110101, 110110, 111100
+    010000, 11000, 110100, 110101, 110110, 111100
 
     en tenant compte des cas facultatifs représentés par les minterms
     suivants
@@ -8002,6 +8232,18 @@ gratuits.
     solution sous la forme d'une expression en \(A,B,C,D,E,F\).
 
 **** Réponse                                                              :r:
+  |        | 010000 | 101000 | 110100 | 110101 | 111100 | 110110 |   | 000000 | 001100 | 000111 | 101001 | 110111 |
+  |--------+--------+--------+--------+--------+--------+--------+---+--------+--------+--------+--------+--------|
+  | 001100 |        |        |        |        |        |        |   |        |    X   |        |        |        |
+  | 000111 |        |        |        |        |        |        |   |        |        |    X   |        |        |
+  | 0-0000 |    X   |        |        |        |        |        |   |    X   |        |        |        |        |
+  | 10100- |        |    X   |        |        |        |        |   |        |        |        |    X   |        |
+  | 11-100 |        |        |    X   |    X   |        |        |   |        |        |        |        |        |
+  | 1101-0 |        |        |    X   |        |    X   |        |   |        |        |        |        |        |
+  | 1101-- |        |        |    X   |    X   |        |    X   |   |        |        |        |        |    X   |
+
+  i.p.e   = 1101--, 1101-0, 10100-, 0-0000
+  i.p.a.i = 11-100, 000111, 001100
   
 *** Question
   Réalisez les fonctions logiques suivantes au moyen d'un multiplexeur
@@ -8012,13 +8254,21 @@ gratuits.
     2. $$f_2(a,b,c) = \prod M(0, 6, 7)$$
 
 **** Réponse                                                              :r:
+    1.  
+      [[file:Solutions_svg/solMux4F1.svg]]
+
+    2.
+      [[file:Solutions_svg/solMux4F2.svg]]
 
 *** Question
   Identifiez la fonction réalisée par le circuit ci-dessous, en donnant
     la liste des minterms en fonction des entrées \(a, b, c\) et \(d\).
-  [[file:Modeles_exercices/exbloc3c.svg]]
+  [[file:Images_svg/exbloc3c.svg]]
 
 **** Réponse                                                              :r:
+    $$
+      F (a, b, c, d)= \sum m(0, 5, 10, 15)
+    $$
 
 *** Question
   Un circuit combinatoire est défini par les trois fonctions logiques
@@ -8038,6 +8288,7 @@ gratuits.
     $$
 
 **** Réponse                                                              :r:
+  [[file:Solutions_svg/solDecoNand.svg]]
 
 *** Question
   Simplifiez la fonction donnée par l'expression suivante
@@ -8059,6 +8310,17 @@ gratuits.
 
   
 **** Réponse                                                              :r:
+    |      | 0011 | 1001 | 1110 | 1111 |   | 0100 | 1100 | 1010 |
+    |------+------+------+------+------+---+------+------+------|
+    | 0011 |   X  |      |      |      |   |      |      |      |
+    | 1001 |      |   X  |      |      |   |      |      |      |
+    | 1010 |      |      |      |      |   |      |      |   X  |
+    | -100 |      |      |      |      |   |   X  |   X  |      |
+    | 11-0 |      |      |   X  |      |   |      |   X  |      |
+    | 111- |      |      |   X  |   X  |   |      |      |      |
+
+    i.p.e   = 111-, 1001, 0011
+    i.p.a.i = 11-0, -100, 11-0
  
 *** Question
   Concevez un circuit qui permet de comparer deux mots de 3 bits et qui
@@ -8066,7 +8328,8 @@ gratuits.
     portes XOR et d'autres portes.
 
 **** Réponse                                                              :r:
- 
+  [[file:Solutions_svg/3bitWordComparXor.svg]]
+
 *** Question
   La fonction logique à quatre entrées \(S = F(A,B,C, D)\) donnée par son 
     tableau de vérité:
@@ -8099,9 +8362,44 @@ gratuits.
        impliquants premiers inessentiels tout court (i.p.i.).
 
     4. Dessinez le circuit logique simplifié, réalisé en n'utilisant que des portes NAND.
-
+        
 **** Réponse                                                              :r:
-      
+      1.  [[file:Solutions_svg/kmapSerie3ex3.svg]]
+          $$
+            S = A^{\prime}C^{\prime}D + BCD + AB^{\prime}D
+          $$
+
+      2. -Tableau de couverture:
+
+            |      | 0001 | 0101 | 0111 | 1001 | 1011 | 1111 |   | 0010 | 1000 | 1110 |
+            |------+------+------+------+------+------+------+---+------+------+------|
+            | 0010 |      |      |      |      |      |      |   |  X   |      |      | 
+            | 0-01 |  X   |   X  |      |      |      |      |   |      |      |      | 
+            | -001 |  X   |      |      |  X   |      |      |   |      |      |      | 
+            | 100- |      |      |      |  X   |      |      |   |      |   X  |      | 
+            | 01-1 |      |   X  |   X  |      |      |      |   |      |      |      | 
+            | 10-1 |      |      |      |  X   |   X  |      |   |      |      |      | 
+            | -111 |      |      |   X  |      |      |  X   |   |      |      |      | 
+            | 1-11 |      |      |      |      |   X  |  X   |   |      |      |      | 
+            | 111- |      |      |      |      |      |  X   |   |      |      |   X  | 
+
+          -Tableau de couverture réduit:
+
+            |      | 0001 | 0101 | 0111 | 1001 | 1011 | 1111 |   | 0010 | 1000 | 1110 |
+            |------+------+------+------+------+------+------+---+------+------+------|
+            | 0-01 |  X   |   X  |      |      |      |      |   |      |      |      | 
+            | -001 |  X   |      |      |  X   |      |      |   |      |      |      | 
+            | 01-1 |      |   X  |   X  |      |      |      |   |      |      |      | 
+            | 10-1 |      |      |      |  X   |   X  |      |   |      |      |      | 
+            | -111 |      |      |   X  |      |      |  X   |   |      |      |      | 
+            | 1-11 |      |      |      |      |   X  |  X   |   |      |      |      | 
+
+      3.  i.p.e   = 0-01, 10-1,-111
+          i.p.a.i = 0010,100-,111-.
+          i.p.i   = 1-11, 01-1, -001
+      4. 
+          [[file:Solutions_svg/solSerie3ex3circuit.svg]]
+
 *** Question
   Un circuit combinatoire est défini par les trois fonctions logiques
     suivantes. Dessinez un circuit réalisant ces trois fonctions en
@@ -8117,16 +8415,40 @@ gratuits.
     $$
 
 **** Réponse                                                              :r:
+    [[file:Solutions_svg/solF123Decodeur.svg]]    
 
 *** Question
   Identifiez la fonction logique \(F(A,B,C,D)\) définie par le circuit
     logique suivant:
- [[file:Modeles_exercices/exbloc3d.svg]]
+ [[file:Images_svg/exbloc3d.svg]]
     1. Donnez son tableau de vérité.
 
     2. Donnez la forme canonique somme de produits de cette fonction.
 
 **** Réponse                                                              :r:
+    1. | \(A\) | \(B\) | \(C\) | \(D\) |   | \(F\) |
+       |-------+-------+-------+-------+---+-------|
+       |   0   |   0   |   0   |   0   |   |   1   |
+       |   0   |   0   |   0   |   1   |   |   0   |
+       |   0   |   0   |   1   |   0   |   |   1   |
+       |   0   |   0   |   1   |   1   |   |   0   |
+       |   0   |   1   |   0   |   0   |   |   0   |
+       |   0   |   1   |   0   |   1   |   |   1   |
+       |   0   |   1   |   1   |   0   |   |   0   |
+       |   0   |   1   |   1   |   1   |   |   1   |
+       |   1   |   0   |   0   |   0   |   |   1   |
+       |   1   |   0   |   0   |   1   |   |   1   |
+       |   1   |   0   |   1   |   0   |   |   0   |
+       |   1   |   0   |   1   |   1   |   |   0   |
+       |   1   |   1   |   0   |   0   |   |   0   |
+       |   1   |   1   |   0   |   1   |   |   0   |
+       |   1   |   1   |   1   |   0   |   |   1   |
+       |   1   |   1   |   1   |   1   |   |   1   |
+
+    2.
+      $$
+        F (A, B, C, D) = \sum m(0, 2 , 5, 7, 8, 9, 14, 15)
+      $$
 
 *** Question
   Considérez le tableau de couverture suivant:
@@ -8160,6 +8482,38 @@ gratuits.
 
    
 **** Réponse                                                              :r:
+    1.  
+        |      | 0101 | 0110 | 0000 | 1100 | 1101 | 1011 | 0111 |
+        |------+------+------+------+------+------+------+------|
+        | -10- |   +  |      |      |   +  |   +  |      |      |
+        | 110- |      |      |      |   +  |   +  |      |      |
+        | 1011 |      |      |      |      |      |   +  |      |
+        | -00- |      |      |   +  |      |      |      |      |
+        | 01-- |   +  |   +  |      |      |      |      |   +  |
+        | -111 |      |      |      |      |      |      |   +  |
+
+    2.
+      i.p.e   = 1101, -10-, -00-, 01--
+      i.p.a.i = 110-, -111
+
+    3. Cas facultatifs = 0100,0001,1000,1001,1111
+
+    4.
+        |      | 0101 | 0110 | 0000 | 1100 | 1101 | 1011 | 0111 |
+        |------+------+------+------+------+------+------+------|
+        | -10- |   +  |      |      |   +  |   +  |      |      |
+        | 1011 |      |      |      |      |      |   +  |      |
+        | -00- |      |      |   +  |      |      |      |      |
+        | 01-- |   +  |   +  |      |      |      |      |   +  |
+
+    5. La ligne -10- domine la ligne 110-.
+
+    6. La colonne 0111 domine la colonne 0110.
+
+    7. $$ F(a, b, c, d) =  m0 + m5 + m6 + m7 + mB+ mC + mD $$ 
+
+    8. $$ F(a, b, c, d) = c\prime + a\prime b + a b\prime c d $$
+
    
 *** Question
   Trouvez l'expression minimale pour les deux fonctions suivantes,
@@ -8175,6 +8529,15 @@ gratuits.
      $$
 
 **** Réponse                                                              :r:
+    $$
+    F_1(A,B,C,D)
+    = A C + A\prime B D + C D\prime 
+    $$
+
+    $$ 
+    F_2(A,B,C,D)
+    = A C + C D
+    $$
 
 *** Question
   La fonction logique à trois entrées \(S = F(A,B,C)\) représentée par le
@@ -8213,6 +8576,21 @@ gratuits.
        trouvée.
 
 **** Réponse                                                              :r:
+    1.  $$
+          S (A, B , C) = \sum m(0, 1 , 3, 6, 7) \\
+          S (A, B, C) = \prod M(2, 4, 5)
+        $$
+
+    2.  [[file:Solutions_svg/kmapSerie3ex4.svg]]
+        $$
+          S = A\prime B\prime + B(A + C)
+        $$
+
+    3.  $$
+          S^{\prime}(A,B,C) = \sum m(2,4,5)
+        $$
+
+    4. [[file:Solutions_svg/solReducKABC.svg]]
 
 *** Question
   Simplifiez la fonction logique donnée par la forme canonique
@@ -8228,6 +8606,19 @@ gratuits.
     aussi simplifiées.
 
 **** Réponse                                                              :r:
+    [[file:Solutions_svg/kmapSerie3ex5.svg]]
+
+    Les regroupements essentiels: orange, mauve, bleu, vert.
+    Le regroupement jaune est absolument inutile.
+
+    $$
+      S = B^{\prime} (D^{\prime}+ AC) + A^{\prime}BC^{\prime}  + ACD^{\prime} 
+    $$
+
+    $$
+      S = B^{\prime}D^{\prime} + A^{\prime}BC^{\prime} + AC(D^{\prime} + B^{\prime})
+    $$
+    
 
 *** Question
   Considérez la fonction logique définie par l'expression
@@ -8249,6 +8640,14 @@ gratuits.
        portes (incluant les inversions).
 
 **** Réponse                                                              :r:
+    1.
+        [[file:Solutions_svg/solBloc3Fnorm.svg]]
+    2.
+        [[file:Solutions_svg/solBloc3Fnand.svg]]
+    3.
+        [[file:Solutions_svg/solBloc3Fnor.svg]]
+    4.  
+        [[file:Solutions_svg/solBloc3FnormReduit.svg]]
 
 *** Question
   Donnez le tableau de vérité pour les fonctions logiques correspondant
@@ -8259,12 +8658,32 @@ gratuits.
     2. $$f(a, b, c) = a(b+c^{\prime})(b^{\prime}+c)$$
 
 **** Réponse                                                              :r:
+    1.  
+      | \(A\) | \(B\) |   | \(f\) |
+      |-------+-------+---+-------|
+      |   0   |   0   |   |   1   |
+      |   0   |   1   |   |   0   |
+      |   1   |   0   |   |   1   |
+      |   1   |   1   |   |   1   |
+
+    2.
+      | \(a\) | \(b\) | \(c\) |   | \(f\) |
+      |-------+-------+-------+---+-------|
+      |   0   |   0   |   0   |   |   0   |
+      |   0   |   0   |   1   |   |   0   |
+      |   0   |   1   |   0   |   |   0   |
+      |   0   |   1   |   1   |   |   0   |
+      |   1   |   0   |   0   |   |   1   |
+      |   1   |   0   |   1   |   |   0   |
+      |   1   |   1   |   0   |   |   0   |
+      |   1   |   1   |   1   |   |   1   |
+
 
 *** Question
 Considérez la fonction logique donnée par l'expression suivante:
 
 \begin{multline*}
-F = A^{\prime} B^{\prime} C^{\prime} D^{\prime} E^{\prime} + {A} B^{\prime} C^{\prime} D^{\prime} E^{\prime} + A^{\prime} B^{\prime} {C} D^{\prime} E^{\prime} + A^{\prime} {B} {C} {D} E^{\prime} \\ + {A} {B} C^{\prime} D^{\prime} {E} + {A} B^{\prime} C^{\prime} D^{\prime} {E} + {A} B^{\prime} D^{\prime} E^{\prime} \\ + {A} B^{\prime} {C} {D} {E} + {A} B^{\prime}  {C} D^{\prime} {E}
+F = A^{\prime} B^{\prime} C^{\prime} D^{\prime} E^{\prime} + {A} B^{\prime} C^{\prime} D^{\prime} E^{\prime} + A^{\prime} B^{\prime} {C} D^{\prime} E^{\prime} + A^{\prime} {B} {C} {D} E^{\prime} \\ + {A} {B} C^{\prime} D^{\prime} {E} + {A} B^{\prime} C^{\prime} D^{\prime} {E} + {A} B^{\prime} {C} D^{\prime} E^{\prime} \\ + {A} B^{\prime} {C} {D} {E} + {A} B^{\prime}  {C} D^{\prime} {E}
 \end{multline*}
 
 Les cas suivants sont facultatifs:
@@ -8279,6 +8698,23 @@ A^{\prime} B^{\prime} C^{\prime} D^{\prime} {E} + {A} {B} C^{\prime} {D} {E} +  
     2. Dessinez un réseau logique qui réalise votre expression logique
        simplifiée en n'utilisant que des portes NAND.
 
+  **** Réponse                                                              :r:
+  1. 
+    |       | 00000 | 10000 | 00100 | 10001 | 10100 | 01110 | 11001 | 10101 | 10111 |   | 00001 | 00101 | 11011 | 11101 |
+    |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+---+-------+-------+-------+-------|
+    | -0-0- |   X   |   X   |   X   |   X   |   X   |       |       |   X   |       |   |   X   |   X   |       |       |
+    | 01110 |       |       |       |       |       |   X   |       |       |       |   |       |       |       |       |
+    | 101-1 |       |       |       |       |       |       |       |   X   |   X   |   |       |       |       |       |
+    | 110-1 |       |       |       |       |       |       |   X   |       |       |   |       |       |   X   |       |
+    | 1--01 |       |       |       |   X   |       |       |   X   |   X   |       |   |       |       |       |   X   |
+
+    
+      i.p.e   = -0-0-, 01110, 101-1, 1--01
+      i.p.a.i = 110-1
+    
+    2.
+      [[file:Solutions_svg/solBloc3ReducFQuinn.svg]]
+
 *** Question
  Vous devez concevoir un circuit logique combinatoire qui calcule la
  valeur absolue d'un nombre de 4 bits signé en complément à deux. Les
@@ -8291,20 +8727,22 @@ A^{\prime} B^{\prime} C^{\prime} D^{\prime} {E} + {A} {B} C^{\prime} {D} {E} +  
        Vous devez mettre des croix aux endroits où vous voulez que les
        connections soient effectuées (dans la section programmable).
 #+attr_latex: :scale 0.45
-[[file:Modeles_exercices/prom.svg]]
+[[file:Images_svg/prom.svg]]
 
     2. Réalisez votre circuit logique combinatoire en utilisant le PAL à
        quatre entrées et deux sorties tel qu'illustré.
        Vous devez mettre des croix aux endroits où vous voulez que les
        connections soient effectuées (dans la section programmable).
 #+attr_latex: :scale 0.45
-[[file:Modeles_exercices/pal1.svg]]
+[[file:Images_svg/pal1.svg]]
+
+**** Réponse                                                              :r:
 
 *** Question
  Considérez le circuit logique ci-dessous. Le signal \(A\) passe de 0 à 1
  l'instant 15 ns; le signal \(B\) passe de 1 à 0 à l'instant 15 ns; le
  signal \(C\) passe de 1 à 0 à l'instant 60 ns.
- [[file:Modeles_exercices/exbloc3e.svg]]
+ [[file:Images_svg/exbloc3e.svg]]
 
     1. Complétez un chronogramme qui montre les traces pour chacun des
        signaux d'entrée \(A, B, C\) et de sortie \(T, U, V, X, Y, Z_1,
@@ -8328,7 +8766,21 @@ A^{\prime} B^{\prime} C^{\prime} D^{\prime} {E} + {A} {B} C^{\prime} {D} {E} +  
 
     6. Donnez le délai de propagation maximal pour le nouveau circuit
        somme de produit.
+  
+  **** Réponse                                                              :r:
+    1.[[file:Solutions_svg/solExBloc3e_1.svg]]
 
+    2.  $$
+          F = A \oplus B
+        $$
+
+    3. Délais de longueur 4, en passant par \(T\) , \(Y\) et \(Z_1\).
+
+    4. On doit attendre le temps d'un délais de propagation pour être certain que le circuit fonctionne correctement.
+
+    5. [[file:Solutions_svg/solExBloc3e.svg]]
+
+    6. Délais de longueur 3.
 ** Série 4
 :PROPERTIES:
   :UNNUMBERED: notoc
@@ -8339,6 +8791,7 @@ A^{\prime} B^{\prime} C^{\prime} D^{\prime} {E} + {A} {B} C^{\prime} {D} {E} +  
     3-vers-8 avec entrée /enable/.
 
 **** Réponse                                                              :r:
+  [[file:Solutions_svg/solExBloc4Dec5v32portesAND.svg]]
 
 *** Question
   Vous devez concevoir un encodeur à priorité à quatre
@@ -8350,6 +8803,8 @@ A^{\prime} B^{\prime} C^{\prime} D^{\prime} {E} + {A} {B} C^{\prime} {D} {E} +  
     entrée est 1.
 
 **** Réponse                                                              :r:
+    [[file:Solutions_svg/solEncodeurPriorite4e.svg]]
+
 
 *** Question
   Un circuit séquentiel à deux bascules D, \(A\) et \(B\), comporte
@@ -8372,9 +8827,32 @@ A^{\prime} B^{\prime} C^{\prime} D^{\prime} {E} + {A} {B} C^{\prime} {D} {E} +  
 
 **** Réponse                                                              :r:
 
+  1. [[file:Solutions_svg/solExBloc4_1.svg]]
+
+  2.  |État présent| \( X \) | \( Y \) | État suivant |  \( Z \) |
+      |------------+---------+---------+--------------+----------|
+      |      0     |     0   |     0   |       0      |    0     |
+      |      0     |     0   |     1   |       1      |    0     |
+      |      0     |     1   |     0   |       0      |    0     |
+      |      0     |     1   |     1   |       0      |    0     |
+      |      1     |     0   |     0   |       0      |    0     |
+      |      1     |     0   |     1   |       1      |    0     |
+      |      1     |     1   |     0   |       2      |    1     |
+      |      1     |     1   |     1   |       2      |    1     |
+      |      2     |     0   |     0   |       3      |    1     |
+      |      2     |     0   |     1   |       2      |    1     |
+      |      2     |     1   |     0   |       2      |    1     |
+      |      2     |     1   |     1   |       2      |    1     |
+      |      3     |     0   |     0   |       3      |    1     |
+      |      3     |     0   |     1   |       2      |    1     |
+      |      3     |     1   |     0   |       0      |    0     |
+      |      3     |     1   |     1   |       0      |    0     |
+
+  3.  [[file:Solutions_svg/solExBloc4FSM_1.svg]]
+
 *** Question
   Considérez le circuit logique suivant:
- [[file:Modeles_exercices/exbloc4a.svg]]
+ [[file:Images_svg/exbloc4a.svg]]
 
     1. Quelle est la fonction combinatoire réalisée par la section
        logique combinatoire, c'est-à-dire, quelle est la fonction $S =
@@ -8391,10 +8869,18 @@ A^{\prime} B^{\prime} C^{\prime} D^{\prime} {E} + {A} {B} C^{\prime} {D} {E} +  
        période minimum.
 
 **** Réponse                                                              :r:
+    1. 
+      $$
+        S = A \oplus B
+      $$
+
+    2. 
+
+    3.
       
 *** Question
   Analysez le circuit logique suivant:
- [[file:Modeles_exercices/exbloc4b.svg]]
+ [[file:Images_svg/exbloc4b.svg]]
 
     1. Analysez le comportement du circuit, en supposant qu'au départ les
        entrées sont $A=0$ et $B=0$ et la sortie $S=0$. Vous devez
@@ -8406,10 +8892,24 @@ A^{\prime} B^{\prime} C^{\prime} D^{\prime} {E} + {A} {B} C^{\prime} {D} {E} +  
 
     3. Identifiez la fonction du circuit.
 
+  **** Réponse                                                              :r:
+    1.  - $$ A = 0 , B = 0 , S = 0 $$
+        - $$ A = 1 , B = 0 , S = 0 $$
+        - $$ A = 1 , B = 1 , S = 1 $$
+        - $$ A = 1 , B = 0 , S = 1 $$
+        - $$ A = 1 , B = 1 , S = 1 $$
+        - $$ A = 0 , B = 1 , S = 0 $$
+        - $$ A = 1 , B = 1 , S = 1 $$
+
+    2.  - \(A\) sert d'entrée de données.
+        - \(B\) sert d'entrée de contrôle.
+
+    3.  Le circuit se comporte comme un loquet D
+
 *** Question
   Considérez circuit séquentiel décrit par le diagramme d'état suivant:
 #+attr_latex: :scale 0.45
-[[file:Modeles_exercices/ex_bloc5b.svg]]
+[[file:Images_svg/ex_bloc5b.svg]]
     1. En utilisant l'assignation d'états $a = 00, b = 01, c = 10, d
          = 11$, construisez le tableau d'état pour ce circuit séquentiel.
 
@@ -8418,6 +8918,20 @@ A^{\prime} B^{\prime} C^{\prime} D^{\prime} {E} + {A} {B} C^{\prime} {D} {E} +  
 
 **** Réponse                                                              :r:
 
+  1. |État présent| \( X \) | État suivant |  \( Z \) |  \( F \) |
+     |------------+---------+--------------+----------+----------|
+     |     00     |    0    |      00      |     0    |     0    |
+     |     00     |    1    |      01      |     0    |     1    |
+     |     01     |    0    |      10      |     0    |     0    |
+     |     01     |    1    |      11      |     1    |     0    |
+     |     10     |    0    |      00      |     0    |     0    |
+     |     10     |    1    |      11      |     0    |     0    |
+     |     11     |    0    |      11      |     1    |     1    |
+     |     11     |    1    |      11      |     1    |     1    |
+     
+  2. [[file:Solutions_svg/solExBloc4_2.svg]]
+
+
 *** Question
   Vous devez concevoir un circuit logique séquentiel à une entrée et
     une sortie qui identifie les deux séquences d'entrée 0110 et 11111
@@ -8425,14 +8939,17 @@ A^{\prime} B^{\prime} C^{\prime} D^{\prime} {E} + {A} {B} C^{\prime} {D} {E} +  
     circuit. Donnez le diagramme d'état simplifié pour ce circuit.
 
 **** Réponse                                                              :r:
+    [[file:Solutions_svg/solExBloc4FSM_1_1.svg]]
 
 *** Question
    Vous devez concevoir un circuit logique séquentiel à une entrée et
     une sortie qui identifie les deux séquences d'entrée 0110
     et 11111. Les séquences d'entrée doivent être identifiées à
-    n'importe quel moment où elles apparaissent en entrée.
+    n'importe quel moment où elles apparaissent en entrée. 
+    Donnez le diagramme d'état simplifié pour ce circuit.
 
 **** Réponse                                                              :r:
+    [[file:Solutions_svg/solExBloc4FSM_1_2.svg]]
 
 *** Question
   Déterminez le diagramme d'état pour un circuit séquentiel synchrone
@@ -8448,6 +8965,7 @@ A^{\prime} B^{\prime} C^{\prime} D^{\prime} {E} + {A} {B} C^{\prime} {D} {E} +  
     $$
 
 **** Réponse                                                              :r:
+    [[file:Solutions_svg/solExBloc4FSM_3.svg]]
 
 *** Question
   Déterminez le diagramme d'état pour un circuit séquentiel synchrone
@@ -8464,7 +8982,8 @@ A^{\prime} B^{\prime} C^{\prime} D^{\prime} {E} + {A} {B} C^{\prime} {D} {E} +  
     $$
 
 **** Réponse                                                              :r:
-
+    [[file:Solutions_svg/solExBloc4FSM_2.svg]]
+    
 *** Question
   Concevez le circuit séquentiel synchrone décrit par le diagramme
     d'état ci-dessous. Vous devez considérer des bascules JK et D et
@@ -8487,15 +9006,15 @@ A^{\prime} B^{\prime} C^{\prime} D^{\prime} {E} + {A} {B} C^{\prime} {D} {E} +  
   Les deux bascules du circuit suivant sont activées par les
      transitions montantes du signal présent à leur entrée
      d'horloge. 
-     [[file:Modeles_exercices/exbloc4c.svg]]
+     [[file:Images_svg/exbloc4c.svg]]
 
      Tracez le chronogramme pour \(X, X^\prime, Y, S\)
 
 **** Réponse                                                              :r:
-
+    [[file:Solutions_svg/solExBloc4c.svg]]
 *** Question
  Vous devez analyser le circuit séquentiel suivant:
- [[file:Modeles_exercices/exbloc4d.svg]]
+ [[file:Images_svg/exbloc4d.svg]]
 
     1. Donnez les équations pour le décodeur de prochain état.
 
@@ -8616,7 +9135,7 @@ A^{\prime} B^{\prime} C^{\prime} D^{\prime} {E} + {A} {B} C^{\prime} {D} {E} +  
 
 *** Question
  Considérez le circuit séquentiel synchrone ci-dessous.
- [[file:Modeles_exercices/exbloc4e.svg]]
+ [[file:Images_svg/exbloc4e.svg]]
 
  Déterminez la vitesse d'horloge maximale en considérant les
  caractéristiques suivantes:
@@ -8643,12 +9162,13 @@ A^{\prime} B^{\prime} C^{\prime} D^{\prime} {E} + {A} {B} C^{\prime} {D} {E} +  
  séquence 0101.
 
 **** Réponse                                                              :r:
-   
+   [[file:Solutions_svg/solExBloc5FSM_1.svg]]
+
 *** Question
  Un circuit séquentiel synchrone est construit à partir de trois
     bascules, \(A\), \(B\), et \(C\). Il comporte une entrée \(x\) et
     une sortie \(y\). Son diagramme d'état est donné ci-dessous. 
- [[file:Modeles_exercices/ex_bloc5.svg]]
+ [[file:Images_svg/ex_bloc5.svg]]
 
  Vous devez concevoir ce circuit en considérant les états inutilisés
  comme des cas facultatifs. Le circuit final doit être analysé pour
@@ -8672,3 +9192,4 @@ A^{\prime} B^{\prime} C^{\prime} D^{\prime} {E} + {A} {B} C^{\prime} {D} {E} +  
 
 [fn:2] Certains postulats viennent en paires; nous les distinguons ici au
 moyen d'étiquettes \spades ou \hearts.
+                 
