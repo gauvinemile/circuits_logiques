@@ -8874,7 +8874,7 @@ A^{\prime} B^{\prime} C^{\prime} D^{\prime} {E} + {A} {B} C^{\prime} {D} {E} +  
     2. [[file:Solutions_svg/solExBloc4a.svg]]
 
     3. [[file:Solutions_svg/solExBloc4aPrepos.svg]]
-        Le temps de propagation minimal est de \(40ns + 3\times 10ns + 5ns = 75ns\).
+        La période minimale de l'horloge est de \(40ns + 3\times 10ns + 5ns = 75ns\).
       
 *** Question
   Analysez le circuit logique suivant:
@@ -9056,7 +9056,7 @@ A^{\prime} B^{\prime} C^{\prime} D^{\prime} {E} + {A} {B} C^{\prime} {D} {E} +  
     3. [[file:Solutions_svg/solExBloc4dFSM.svg]]
     4.[[file:Solutions_svg/solExBloc4dTime.svg]]
     5. [[file:Solutions_svg/solExBloc4TimePrepos.svg]]
-      La période minimale serait de \(15ns+15ns+11ns = 41ns\).
+      La période minimale est de \(15ns+15ns+11ns = 41ns\).
 *** Question
  Vous devez concevoir un circuit logique utilisé dans un système
  permettant de trier des données. Le circuit reçoit deux nombres
@@ -9206,7 +9206,7 @@ A^{\prime} B^{\prime} C^{\prime} D^{\prime} {E} + {A} {B} C^{\prime} {D} {E} +  
       $Q^{\prime}$: $t_{pLH}$ = 25 ns, $t_{pHL}$ = 20 ns.
 
 **** Réponse                                                              :r:
-
+  La période minimale de l'horloge est de \(25ns + 2\times 10ns + 12ns = 57ns\).
 ** Série 5
 :PROPERTIES:
   :UNNUMBERED: notoc
