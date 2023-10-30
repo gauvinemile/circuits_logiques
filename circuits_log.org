@@ -8734,7 +8734,8 @@ A^{\prime} B^{\prime} C^{\prime} D^{\prime} {E} + {A} {B} C^{\prime} {D} {E} +  
 [[file:Images_svg/pal1.svg]]
 
 **** Réponse                                                              :r:
-
+    1. [[file:Solutions_svg/solProm4.svg]]
+    2.
 *** Question
  Considérez le circuit logique ci-dessous. Le signal \(A\) passe de 0 à 1
  l'instant 15 ns; le signal \(B\) passe de 1 à 0 à l'instant 15 ns; le
@@ -8872,7 +8873,8 @@ A^{\prime} B^{\prime} C^{\prime} D^{\prime} {E} + {A} {B} C^{\prime} {D} {E} +  
 
     2. [[file:Solutions_svg/solExBloc4a.svg]]
 
-    3.
+    3. [[file:Solutions_svg/solExBloc4aPrepos.svg]]
+        Le temps de propagation minimal est de \(40ns + 3\times 10ns + 5ns = 75ns\).
       
 *** Question
   Analysez le circuit logique suivant:
@@ -8992,10 +8994,11 @@ A^{\prime} B^{\prime} C^{\prime} D^{\prime} {E} + {A} {B} C^{\prime} {D} {E} +  
   |           01 |      1 |       00 |      1 |
   |           11 |      0 |       00 |      1 |
   |           11 |      1 |       10 |      0 |
-  |           00 |      0 |       10 |      1 |
-  |           00 |      1 |       01 |      1 |
+  |           10 |      0 |       10 |      1 |
+  |           10 |      1 |       01 |      1 |
 
 **** Réponse                                                              :r:
+  [[file:Solutions_svg/solExBloc4FSM_4.svg]]
 
 *** Question
   Les deux bascules du circuit suivant sont activées par les
@@ -9052,7 +9055,8 @@ A^{\prime} B^{\prime} C^{\prime} D^{\prime} {E} + {A} {B} C^{\prime} {D} {E} +  
         |   1   |   1   |    1    |      0      |   1   |
     3. [[file:Solutions_svg/solExBloc4dFSM.svg]]
     4.[[file:Solutions_svg/solExBloc4dTime.svg]]
-    5.
+    5. [[file:Solutions_svg/solExBloc4TimePrepos.svg]]
+      La période minimale serait de \(15ns+15ns+11ns = 41ns\).
 *** Question
  Vous devez concevoir un circuit logique utilisé dans un système
  permettant de trier des données. Le circuit reçoit deux nombres
@@ -9079,6 +9083,7 @@ A^{\prime} B^{\prime} C^{\prime} D^{\prime} {E} + {A} {B} C^{\prime} {D} {E} +  
  le circuit).
 
 **** Réponse                                                              :r:
+    [[file:Solutions_svg/Schema_bloc.png]]
 
 *** Question
  On doit concevoir un système séquentiel avec une entrée $E$ et une
@@ -9105,7 +9110,7 @@ A^{\prime} B^{\prime} C^{\prime} D^{\prime} {E} + {A} {B} C^{\prime} {D} {E} +  
  Donnez un diagramme d'état pour chacune des deux versions.
 
 **** Réponse                                                              :r:
-    1.
+  1.
     [[file:Solutions_svg/solExBloc4FSM_V1.svg]]
   2.
     [[file:Solutions_svg/solExBloc4FSM_V2.svg]]
@@ -9147,6 +9152,42 @@ A^{\prime} B^{\prime} C^{\prime} D^{\prime} {E} + {A} {B} C^{\prime} {D} {E} +  
     6. Dessinez le schéma du circuit séquentiel obtenu.
 
 **** Réponse                                                              :r:
+    1.  
+        | b     |   |   X   |   --  |   --  |   --  |   --  |
+        | c     |   |   X   |   X   |   --  |   --  |   --  |
+        | d     |   |   X   |   XX  |   X   |   --  |   --  |
+        | e     |   |   X   | OUI   |   X   |   XX  |   --  |
+        | f     |   |  OUI  |   X   |   X   |   X   |   X   |
+        |-------+---+-------+-------+-------+-------+-------|
+        |       |   | a     | b     | c     | d     | e     |
+
+        | État présent | Entrée \(A\) | État suivant | Sortie \(S\) |
+        |--------------+--------------+--------------+--------------|
+        | a            |       0      |       c      |       1      |
+        | a            |       1      |       a      |       1      |
+        | b            |       0      |       b      |       0      |
+        | b            |       1      |       a      |       1      |
+        | c            |       0      |       b      |       1      |
+        | c            |       1      |       d      |       0      |
+        | d            |       0      |       a      |       0      |
+        | d            |       1      |       b      |       1      |
+    
+    2.  [[file:Solutions_svg/solExBloc4FSM_Reduction.svg]]
+
+    3.  | État | Code |
+        |------+------|
+        | a    |  00  |
+        | b    |  01  |
+        | c    |  10  |
+        | d    |  11  |
+        
+    4.  [[file:Solutions_svg/solExBloc4KmapE1.png]]
+        [[file:Solutions_svg/solExBloc4KmapE2.png]]
+
+    5. [[file:Solutions_svg/solExBloc4KmapSortie.png]]
+
+    6. [[file:Solutions_svg/solExBloc4ReductionDiag.svg]]
+
 
 *** Question
  Considérez le circuit séquentiel synchrone ci-dessous.
@@ -9193,6 +9234,10 @@ A^{\prime} B^{\prime} C^{\prime} D^{\prime} {E} + {A} {B} C^{\prime} {D} {E} +  
     2. Conception avec des bascules JK
 
 **** Réponse                                                              :r:  
+    1.
+      [[file:Solutions_svg/sol_exbloc5_DLatch.svg]]
+    2.
+      [[file:Solutions_svg/sol_exbloc5FSM_JKLatch.svg]]
 
 *** Question
   Faire le diagramme d'état d'un compteur synchrone qui produit les
